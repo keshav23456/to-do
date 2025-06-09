@@ -144,8 +144,8 @@ export const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                   className="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-all duration-200 w-full p-3 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 group"
                 >
                   {theme === 'light' ? (
-                    <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-200\" fill="none\" stroke="currentColor\" viewBox="0 0 24 24">
+                      <path strokeLinecap="round\" strokeLinejoin="round\" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                   ) : (
                     <svg className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
