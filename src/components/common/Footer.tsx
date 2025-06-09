@@ -10,7 +10,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 rounded-xl flex items-center justify-center mr-3 shadow-lg">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -27,7 +27,7 @@ export const Footer = () => {
               {/* Social Media Links */}
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-800"
+                className="text-gray-400 hover:text-white transition-all duration-200 p-2 rounded-xl hover:bg-gray-800 hover:scale-105"
                 aria-label="Twitter"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@ export const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-800"
+                className="text-gray-400 hover:text-white transition-all duration-200 p-2 rounded-xl hover:bg-gray-800 hover:scale-105"
                 aria-label="GitHub"
               >
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Home
                 </Link>
@@ -65,7 +65,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to="/notes"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   My Notes
                 </Link>
@@ -73,7 +73,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to="/notes/new"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Create Note
                 </Link>
@@ -88,7 +88,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to="/privacy-policy"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Privacy Policy
                 </Link>
@@ -96,7 +96,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to="/terms"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Terms of Service
                 </Link>
@@ -104,7 +104,7 @@ export const Footer = () => {
               <li>
                 <Link
                   to="/cookie-policy"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm hover:translate-x-1 inline-block"
                 >
                   Cookie Policy
                 </Link>
@@ -119,9 +119,9 @@ export const Footer = () => {
               <li>
                 <a
                   href="mailto:support@keepvault.com"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm flex items-center group"
                 >
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   support@keepvault.com
@@ -130,9 +130,9 @@ export const Footer = () => {
               <li>
                 <a
                   href="tel:+1234567890"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center"
+                  className="text-gray-400 hover:text-white transition-all duration-200 text-sm flex items-center group"
                 >
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                   (123) 456-7890

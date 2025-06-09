@@ -4,15 +4,24 @@ export const Home = () => {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen">
       {/* Hero Section */}
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-200 to-purple-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
+          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-200 via-purple-200 to-pink-200 opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] animate-pulse" />
         </div>
         
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <div className="mb-8 flex justify-center">
+              <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-gray-400 ring-1 ring-gray-900/10 dark:ring-gray-100/10 hover:ring-gray-900/20 dark:hover:ring-gray-100/20 transition-all duration-300">
+                Secure, Modern, Beautiful.{' '}
+                <Link to="/register" className="font-semibold text-indigo-600 dark:text-indigo-400">
+                  <span className="absolute inset-0" aria-hidden="true" />
+                  Get started <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
+            </div>
+            <h1 className="text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
               Your Secure Digital Notebook
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -23,7 +32,7 @@ export const Home = () => {
             <div className="mt-12 flex items-center justify-center gap-x-8">
               <Link
                 to="/register"
-                className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl hover:from-indigo-700 hover:to-purple-700 hover:shadow-2xl hover:shadow-indigo-500/25 hover:scale-105"
+                className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 rounded-2xl hover:from-indigo-700 hover:via-purple-700 hover:to-indigo-700 hover:shadow-2xl hover:shadow-indigo-500/25 hover:scale-105 transform"
               >
                 <span className="relative">Get Started</span>
                 <svg className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,7 +41,7 @@ export const Home = () => {
               </Link>
               <Link
                 to="/login"
-                className="group text-lg font-semibold leading-6 text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+                className="group text-lg font-semibold leading-6 text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300"
               >
                 Login 
                 <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1 ml-1">→</span>
@@ -43,12 +52,12 @@ export const Home = () => {
         
         {/* Background decoration */}
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-purple-200 to-indigo-200 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" />
+          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-purple-200 via-pink-200 to-indigo-200 opacity-40 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem] animate-pulse" />
         </div>
       </div>
 
       {/* Features Section */}
-      <div className="py-24 sm:py-32 bg-gray-50 dark:bg-gray-800/50">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800/50 dark:to-gray-900">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-indigo-600 dark:text-indigo-400 uppercase tracking-wide">
@@ -63,9 +72,9 @@ export const Home = () => {
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="group flex flex-col bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="group flex flex-col bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 dark:border-gray-800">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900 dark:text-white">
-                  <div className="h-10 w-10 flex items-center justify-center rounded-lg bg-indigo-600 group-hover:bg-indigo-700 transition-colors duration-300">
+                  <div className="h-12 w-12 flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:from-indigo-700 group-hover:to-purple-700 transition-all duration-300 group-hover:scale-110">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -91,9 +100,9 @@ export const Home = () => {
                 </dd>
               </div>
               
-              <div className="group flex flex-col bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="group flex flex-col bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 dark:border-gray-800">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900 dark:text-white">
-                  <div className="h-10 w-10 flex items-center justify-center rounded-lg bg-purple-600 group-hover:bg-purple-700 transition-colors duration-300">
+                  <div className="h-12 w-12 flex items-center justify-center rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 group-hover:from-purple-700 group-hover:to-pink-700 transition-all duration-300 group-hover:scale-110">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -119,9 +128,9 @@ export const Home = () => {
                 </dd>
               </div>
               
-              <div className="group flex flex-col bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="group flex flex-col bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 dark:border-gray-800">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900 dark:text-white">
-                  <div className="h-10 w-10 flex items-center justify-center rounded-lg bg-emerald-600 group-hover:bg-emerald-700 transition-colors duration-300">
+                  <div className="h-12 w-12 flex items-center justify-center rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 group-hover:from-emerald-700 group-hover:to-teal-700 transition-all duration-300 group-hover:scale-110">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -154,7 +163,7 @@ export const Home = () => {
       {/* CTA Section */}
       <div className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gradient-to-r from-indigo-600 to-purple-600 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <div className="relative isolate overflow-hidden bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Start organizing your thoughts today.
@@ -166,7 +175,7 @@ export const Home = () => {
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <Link
                   to="/register"
-                  className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-gray-50 hover:shadow-lg transition-all duration-200 hover:scale-105"
+                  className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-gray-50 hover:shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   Get started
                 </Link>
@@ -179,7 +188,7 @@ export const Home = () => {
               </div>
             </div>
             <div className="relative mt-16 h-80 lg:mt-8">
-              <div className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" />
+              <div className="absolute left-0 top-0 w-[57rem] max-w-none rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur-sm" />
             </div>
           </div>
         </div>
